@@ -13,11 +13,68 @@ Const cdoNTLM = 2 'NTLM
 
 dim htmlBody
 
+' ------------------- PR ----------------------------
+' ---------------------------------------------------
+
+' Const tnombreNegocio = "The Yates Company Inc" '* Nombre del negocio
+' Const tdestinatario = "jtomala@hl-yatespr.com" '* Correo del cliente
+' Const tservidor = "mail.asipr.com" '* Nombre del servidor
+' Const tuser = "servidor@eyezonepr.com" '* Usuario del cliente"
+' Const tpass = "cm123*1" '* Clave del cliente"
+
+
+
+' ------------------- RD ----------------------------
+' ---------------------------------------------------
+
+Const tnombreNegocio = "Mobe Industrial  " '* Nombre del negocio
+Const tdestinatario = "ventas@mobeindustrial.com" '* Correo del cliente
+Const tservidor = "smtp.office365.com" '* Nombre del servidor
+Const tuser = "apoyowebsites@caribemedia.com.do" '* Usuario del cliente"
+Const tpass = "awcaribe123*1" '* Clave del cliente"
+
+
+
+
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+' .
+
+' ------------------- CODIGO ----------------------------
+' ---------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 '*PARAMETRO: NOMBRE DEL CLIENTE
-Const nombreNegocio = "Ceramica Apolo SRL"
+nombreNegocio = tnombreNegocio
 
 '*PARAMETRO: DESTINATARIOS SEPARADOS POR ; (PUNTO Y COMA)
-Const destinatario = "mercedesdiaz199605@gmail.com;  "
+destinatario = tdestinatario
 
 if URLDecode(Request.QueryString("email")) <> "" then
     emailfrom = URLDecode(Request.QueryString("email"))
@@ -29,7 +86,7 @@ end if
 
 Set objMessage = CreateObject("CDO.Message")
 objMessage.Subject = Request.QueryString("email") + " Message sent through "+  ":" + nombreNegocio
-objMessage.From = "apoyowebsites@caribemedia.com.do"
+objMessage.From = tuser
 objMessage.To = destinatario
 objMessage.HTMLBody  = "<div>"+SetHtmlBody()+"<div>"
 
@@ -40,7 +97,7 @@ objMessage.Configuration.Fields.Item _
 
 'Name or IP of Remote SMTP Server
 objMessage.Configuration.Fields.Item _
-("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.office365.com"
+("http://schemas.microsoft.com/cdo/configuration/smtpserver") = tservidor
 
 'Type of authentication, NONE, Basic (Base64 encoded), NTLM
 objMessage.Configuration.Fields.Item _
@@ -48,11 +105,11 @@ objMessage.Configuration.Fields.Item _
 
 'Your UserID on the SMTP server
 objMessage.Configuration.Fields.Item _
-("http://schemas.microsoft.com/cdo/configuration/sendusername") = "apoyowebsites@caribemedia.com.do"
+("http://schemas.microsoft.com/cdo/configuration/sendusername") = tuser
 
 'Your password on the SMTP server
 objMessage.Configuration.Fields.Item _
-("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "awcaribe123*1"
+("http://schemas.microsoft.com/cdo/configuration/sendpassword") = tpass
 
 'Server port (typically 25)
 objMessage.Configuration.Fields.Item _

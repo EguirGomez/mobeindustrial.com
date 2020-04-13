@@ -171,7 +171,7 @@ nav ul li a:hover {
     text-align: center !important;
     font-weight: 700;
     text-transform: uppercase;
-    color: #B42730;
+    color: #ff1110;
     padding-top: 90px;
 }
 
@@ -217,7 +217,7 @@ nav ul li a:hover {
 }
 
 .background-serv {
-    background-color: #f9f2ed;
+    background-color: #e7e7e7;
     padding-bottom: 10%;
     position: relative;
 }
@@ -228,11 +228,20 @@ nav ul li a:hover {
     margin-bottom: 60px;
 }
 
+.centrar h4 {
+    text-align: center !important;
+    padding: 30px;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+}
+
 .title-galeria {
     text-align: center !important;
     font-weight: 700;
     text-transform: uppercase;
-    color: #B42730;
+    color: #ff1110;
     padding-top: 90px;
 }
 
@@ -254,11 +263,11 @@ nav ul li a:hover {
     margin-bottom: 0 !important;
     background-color: rgba(0, 0, 0, 0.03) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
-    background-color: #d35738 !important;
+    background-color: #ff1110 !important;
 }
 
 .card-header:hover {
-    background: #a82634 !important;
+    background: #000 !important;
 }
 
 .gallery {
@@ -351,7 +360,7 @@ li {
 
 @media (min-width: 576px) {
     .rd-form .button {
-        width: auto;
+        width: 100px;
     }
 }
 
@@ -508,16 +517,16 @@ textarea.textarea-lg {
 .button-secondary,
 .button-secondary:focus {
     color: #FFF;
-    background-color: #d35738;
-    border-color: #FA2F2F;
+    background-color: #ff1110;
+    border-color: #000;
     border-radius: 6px;
 }
 
 .button-secondary:hover,
 .button-secondary:active {
     color: #ffffff;
-    background-color: #a82634;
-    border-color: #FA2F2F;
+    background-color: #000;
+    border-color: #ff1110;
 }
 
 .title-classic {
@@ -612,7 +621,7 @@ textarea.textarea-lg {
     font-weight: 400;
     line-height: 12px;
     letter-spacing: 0;
-    color: #f5543f;
+    color: #ff1110;
     transition: .3s;
 }
 
@@ -662,7 +671,7 @@ textarea.textarea-lg {
 }
 
 .form-output.error {
-    color: #f5543f;
+    color: #ff1110;
 }
 
 .form-output.success {
@@ -840,7 +849,7 @@ textarea.textarea-lg {
 
 .section-xl {
     padding: 50px;
-    background-color: #F9F2EC;
+    background-color: #fff;
 }
 
 .contacts-classic a {
@@ -934,7 +943,7 @@ dl {
         width: 100%;
         text-align: center;
         line-height: 30px !important;
-        color: #B42730;
+        color: #ff1110;
     }
     .content2 {
         margin-left: 2% !important;
@@ -953,7 +962,7 @@ dl {
 
 @media (max-width: 622px) {
     .content2 {
-        margin-left: 9% !important;
+        margin-left: 3% !important;
         margin-top: 7%;
         align-items: center;
         display: flex;
@@ -963,7 +972,7 @@ dl {
         text-align: center !important;
         font-weight: 700;
         text-transform: uppercase;
-        color: #B42730;
+        color: #ff1110;
         padding-top: 100px;
     }
 }
